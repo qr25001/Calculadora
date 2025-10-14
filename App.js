@@ -1,20 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import CalculadoraScreen from './screens/CalculadoraScreen';
+import { Layout } from './components';
+import { Button } from 'react-native-web';
+import ButtonPrimary from './components/ButtonPrimary';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <CalculadoraScreen />
-    </View>
+      <Layout title="Contacto">
+                   <ButtonPrimary title="boton" />
+      </Layout>
+      
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
